@@ -15,11 +15,7 @@ function Guess({ value, answer }) {
     <div className="grid">
       <p className="guess">
         {range(5).map((i) => (
-          <Cell
-            key={i}
-            letter={result ? result[i].letter : undefined}
-            status={result ? result[i].status : undefined}
-          />
+          <Cell key={i} letter={result ? result[i].letter : undefined} status={result ? result[i].status : undefined} />
         ))}
       </p>
     </div>
